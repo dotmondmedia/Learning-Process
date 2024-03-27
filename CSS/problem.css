@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+Head{
+    width: 100px;
+    min-height: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    background-color: rgb(227, 217, 217);
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+.lukaku{
+    background-image: url(images/1695123475686.jpg);
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(227, 217, 217);
+    padding-bottom: 1px;
+}
+p{  
+    padding-top: 1px;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(227, 217, 217);
+}
+button{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(227, 217, 217) ;
+    padding: 10px;
+    margin-top: 10px;
+    padding: 10px 25px;
+}
+main{
+    display: flex;
+    height: 100%;
+    background: radial-gradient(white,red,green);
+    visibility: hidden;
+}
+.sec1{
+    width: 70%;
+    height: 100%;
+    border: 5px solid;
+}
+.sec2{
+    width: 30%;
+    height: 100%;
+    border: 5px solid;
+}
+ div img{
+   height: 150px;
+   width: 150px; 
+   margin-left: 20px;
+   margin-top: 20px;  
+   color: black;
+   border: 5px;
+   font-size: 10px;
+}
+.merts{
+    gap: 100%;
+    text-align: center;
+}
+
+

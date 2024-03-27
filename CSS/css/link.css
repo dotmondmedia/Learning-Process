@@ -1,0 +1,52 @@
+body{
+    color: green;
+}
+h1{
+    color: red;
+}
+h1{
+    color: blue;
+}
+.ontario{
+    background-color: papayawhip;
+}
+.babavos{
+    color: magenta;
+}
+#ross{
+    background-color: tomato;
+}
+section span{
+    color: green;
+}
+button + h2{
+    color: brown;
+}
+type{
+    color: magenta;
+}
+h1:hover{
+    font-size:100px ;
+    color: red;
+    text-decoration: underline;
+}
+
+section:first-child{
+    font-size: px;
+    color: red;
+    text-decoration: underline;
+}
+p::selection{
+    color:tomato;
+    background-color: purple;
+    font-size: 150px;
+    
+}
+h1::before{
+    content: "before";
+    color: tomato;
+}
+h1::after{
+    content: "after";
+    color: green;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+<style>
+.maguire {
+    margin-left: 40%;
+    border: 2px solid tomato;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#varane {
+    background-color: red;
+    transform: rotatey(-100deg);
+
+}
+
+#martinez {
+    background-color: green;
+}
+
+#martinez:hover {
+   transition: all 2s linear 1s;
+   animation-name: wheel;
+   animation-duration: 5s;
+   animation-timing-function: ease-in;
+   animation-delay: 500ms;
+   animation-iteration-count: infinite;
+}
+
+@keyframes wheel {
+    
+    0% {
+        transform: translatex(0);
+    }
+
+    33%{
+        transform:translatex(600px) rotate(180deg)
+    }
+    66%{
+        transform:translate(-600px) rptate (-180deg)
+    }
+    100%{
+        transition:translatex(0)
+    }
+}
+
+
+#lamela:hover {
+    background-color: tomato;
+}
+#lamela:hover {
+    transform: translate(-100px, -100px);
+    /* transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in; */
+    transition: transform 2000ms ease-in 1000ms;
+    background-color: turquoise;
+}
+</style>
+<body>
+    <div class="lindelof">
+        <div class="maguire" id="varane">😂</div>
+        <div class="maguire" id="martinez">🤣</div>
+        <div class="maguire" id="lamela">😁</div>
+    </div>
+</body>
+</html>
