@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String loop task</title>
+</head>
+<body>
+    <h1>Game</h1>
+
+
+    <script>
+        let wordsAarray = ["facebook","twitter","whatsapp","thread","linkedin","discord","flickr","instagram","snapchat","telegram"]
+
+        randNum1 = Math.floor(Math.random() *5) + 1
+        randNum2 = Math.floor(Math.random() *5) + 1
+
+
+        chosen = wordsAarray[Math.floor(Math.random() * wordsAarray.length)]
+
+        let wordGuess =  prompt(`What is the chosen word\nfacebook\ntwitter\nwhatsapp\nthread\nlinkedin\ndiscord\nflickr\ninstagram\nsnapchat\ntelegram`) 
+
+        let limitNum = 1
+        
+        while(wordGuess !== chosen){
+            wordGuess =  prompt(`What is the chosen word${limitNum >= 3?"\n"+ "Hint:" + " " + chosen[randNum1] + chosen[randNum2] : ""}\nfacebook\ntwitter\nwhatsapp\nthread\nlinkedin\ndiscord\nflickr\ninstagram\nsnapchat\ntelegram`)
+            limitNum++
+
+            if(limitNum === 5){
+                alert("you have lost the game")
+                break
+            }
+            
+        }
+
+        if(wordGuess === chosen) alert("you have won the game")
+
+    </script>
+</body>
+</html>
